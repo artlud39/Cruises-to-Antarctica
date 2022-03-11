@@ -17,7 +17,11 @@
 
 // Blocks
 // ---------------------------------
-
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/site-list.scss";
+@import "blocks/page-main.scss";
+@import "blocks/page-footer.scss";
 @import "blocks/btn";
 @import "blocks/modal";
 
