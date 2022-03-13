@@ -1,0 +1,44 @@
+.burger {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.burger__line {
+  width: 30px;
+  height: 2px;
+  transition: .2s linear;
+  background-color: $color-alice-blue;
+}
+
+.burger--opened {
+  gap: 0;
+}
+
+.burger--opened .burger__line {
+  margin-top: -2px;
+  background-color: $color-tangaroa;
+
+  &:nth-child(1)  {
+    transform: rotate(45deg);
+  }
+
+  &:nth-child(2)  {
+    background: transparent;
+  }
+
+  &:nth-child(3)  {
+    transform: rotate(-45deg);
+  }
+}
+
+.burger:disabled {
+  opacity: 0.3;
+}
