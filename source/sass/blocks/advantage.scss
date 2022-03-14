@@ -1,0 +1,160 @@
+.advantage {
+  background-color: $color-alice-blue;
+  background-image: url("../../img/content/background-advantages-img-desktop.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 120px 0;
+}
+
+.advantage__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  justify-content: center;
+  align-items: center;
+}
+
+.advantage__title {
+  margin: 0;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 42px;
+  color: $color-tangaroa;
+}
+
+.advantage__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.advantage__item {
+  position: relative;
+  background-color: $color-alice-blue;
+  max-width: 360px;
+  padding: 30px;
+  padding-top: 87px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 30px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.advantage__item--ship::before {
+  top: 30px;
+  width: 27px;
+  height: 32px;
+  background-image: url("../../img/svg/ship-icon.svg");
+}
+
+.advantage__item--tick::before {
+  top: 35px;
+  width: 38px;
+  height: 21px;
+  background-image: url("../../img/svg/tick-icon.svg");
+}
+
+.advantage__item--boat::before {
+  top: 38px;
+  width: 42px;
+  height: 15px;
+  background-image: url("../../img/svg/boat-icon.svg");
+}
+
+.advantage__item-title {
+  margin: 0;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: $color-tangaroa;
+}
+
+.advantage__item-text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: $color-tangaroa;
+}
+
+
+@include vp-1023 {
+  .advantage {
+    padding: 100px 0;
+  }
+
+  .advantage__title {
+    font-size: 26px;
+    line-height: 39px;
+  }
+
+  .advantage__list {
+    gap: 30px;
+  }
+
+  .advantage__item {
+    max-width: 206px;
+    padding: 20px;
+    padding-top: 76px;
+    gap: 20px;
+
+    &::before {
+      left: 20px;
+    }
+  }
+
+  .advantage__item--ship::before {
+    top: 25px;
+    width: 21px;
+    height: 26px;
+  }
+
+  .advantage__item--tick::before {
+    top: 29px;
+    width: 33px;
+    height: 19px;
+  }
+
+  .advantage__item--boat::before {
+    top: 32px;
+    width: 38px;
+    height: 13px;
+  }
+}
+
+@include vp-767 {
+  .advantage {
+    padding: 65px 0;
+  }
+
+  .advantage__wrapper {
+    gap: 40px;
+  }
+
+  .advantage__title {
+    font-size: 26px;
+    line-height: 39px;
+  }
+
+  .advantage__list {
+    flex-direction: column;
+  }
+
+  .advantage__item {
+    max-width: 290px;
+    min-height: 250px;
+    padding: 76px 15px 25px 20px;
+  }
+}

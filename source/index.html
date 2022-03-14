@@ -16,8 +16,9 @@
       <div class="page-header__wrapper container">
         <div class="page-header__logo">
           <a>
-            <img class="page-header__logo-img" src="img/svg/logo-icon.svg" width="70" height="38"
-              alt="Логотип ввиде нескольких гор со снежными вершинами">
+            <svg class="page-header__logo-img page-header__logo-img--open-menu" width="70" height="38">
+              <use xlink:href="img/sprite_auto.svg#logo-icon"></use>
+            </svg>
           </a>
         </div>
         <nav class="page-header__nav main-nav main-nav--closed main-nav--nojs">
@@ -35,7 +36,7 @@
         </button>
       </div>
       <div class="page-header__intro">
-        <div class="page-header__intro-wrapper ">
+        <div class="page-header__intro-wrapper container">
           <h1 class="page-header__intro-title">Круизы в Антарктику</h1>
           <p class="page-header__intro-text">Волшебный мир айсбергов и пингвинов</p>
         </div>
@@ -43,12 +44,60 @@
     </header>
 
     <main class="page-main">
-      <section class="intro">
-        <div class="container">
-          <div></div>
-          <div class="intro__img-wrapper">
-            <img src="#" width="560" height="301" alt="три пингвина на снегу">
+      <section class="page-main__intro intro">
+        <h2 class="visually-hidden">О путешествии</h2>
+        <div class="intro__wrapper container">
+          <div class="intro__inner-info">
+            <h3 class="intro__title">Путешествие на край Земли</h3>
+            <p class="intro__text">
+              Это волшебное путешествие поможет вам познакомиться поближе с удивительным миром Антарктики.
+              Наш круизный лайнер отвезет вас на край Земли, где вы сможете увидеть: ледяные айсберги, несколько видов
+              пингвинов, китов, морских котиков и многое другое.
+            </p>
           </div>
+          <div class="intro__img-wrapper">
+            <picture>
+              <!-- <source type="image/webp" media="(max-width: 768px)"
+                  srcset="img/photo-city-desktop.webp 1x, img/photo-city-desktop@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1024px)"
+                  srcset="img/photo-city-tablet.webp 1x, img/photo-city-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-city-mobile.webp 1x, img/photo-city-mobile@2x.webp 2x"> -->
+              <source media="(max-width: 767px)"
+                srcset="img/content/penguins-img-mobile.jpg, img/content/penguins-img-mobile@2x.jpg 2x">
+              <source media="(max-width: 1023px)"
+                srcset="img/content/penguins-img-tablet.jpg, img/content/penguins-img-tablet@2x.jpg 2x">
+              <img class="intro__img" src="img/content/penguins-img-desktop.jpg" width="560" height="301"
+                srcset="img/content/penguins-img-desktop.jpg 2x" alt="три пингвина на снегу">
+            </picture>
+          </div>
+        </div>
+      </section>
+      <section class="page-main__advantage advantage">
+        <div class="advantage__wrapper container">
+          <h2 class="advantage__title">Преимущества</h2>
+          <ul class="advantage__list">
+            <li class="advantage__item advantage__item--ship">
+              <h3 class="advantage__item-title">Небольшой круизный лайнер</h3>
+              <p class="advantage__item-text">
+                Круизный лайнер, рассчитанный всего лишь на 300 гостей, поможет избежать шума и очередей и даст
+                возможность насладиться видами и природой.
+              </p>
+            </li>
+            <li class="advantage__item advantage__item--tick">
+              <h3 class="advantage__item-title">Система все включено</h3>
+              <p class="advantage__item-text">
+                Все наши круизы работают
+                по системе “Все Включено”. Великолепные блюда и безлимитный бар доступны для вас 24 часа.
+              </p>
+            </li>
+            <li class="advantage__item advantage__item--boat">
+              <h3 class="advantage__item-title">Экскурсионные туры на Zodiac</h3>
+              <p class="advantage__item-text">
+                Экскурсионные туры к берегам Антарктиды совершаются на оборудованных лодках типа Zodiac в сопровождении
+                опытных экскурсоводов.
+              </p>
+            </li>
+          </ul>
         </div>
       </section>
     </main>
@@ -58,15 +107,17 @@
         <div class="page-footer__inner">
           <div class="page-footer__logo">
             <a>
-              <img class="page-footer__logo-img" src="img/svg/logo-icon.svg" width="70" height="38"
-                alt="Логотип ввиде нескольких гор со снежными вершинами">
+              <svg class="page-footer__logo-img" width="70" height="38">
+                <use xlink:href="img/sprite_auto.svg#logo-icon"></use>
+              </svg>
             </a>
           </div>
           <nav class="page-footer__nav footer-nav">
             <ul class="footer-nav__list site-list-footer">
               <li class="site-list__item-footer"><a class="site-list__item-link-footer" href="#">Преимущества </a></li>
               <li class="site-list__item-footer"><a class="site-list__item-link-footer" href="#">Направления</a></li>
-              <li class="site-list__item-footer"><a class="site-list__item-link-footer" href="#">Ближайшие круизы</a></li>
+              <li class="site-list__item-footer"><a class="site-list__item-link-footer" href="#">Ближайшие круизы</a>
+              </li>
               <li class="site-list__item-footer"><a class="site-list__item-link-footer" href="#">Контакты</a></li>
             </ul>
           </nav>
@@ -82,17 +133,17 @@
                 </a>
               </li>
               <li class="social__item"><a class="social__link" href="#">
-                <svg class="social__item-img social__item-img--instagram" width="20" height="20">
-                  <use xlink:href="img/sprite_auto.svg#instagram-icon"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item"><a class="social__link" href="#">
-              <svg class="social__item-img social__item-img--twitter" width="20" height="16">
-                <use xlink:href="img/sprite_auto.svg#twitter-icon"></use>
-              </svg>
-            </a>
-          </li>
+                  <svg class="social__item-img social__item-img--instagram" width="20" height="20">
+                    <use xlink:href="img/sprite_auto.svg#instagram-icon"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item"><a class="social__link" href="#">
+                  <svg class="social__item-img social__item-img--twitter" width="20" height="16">
+                    <use xlink:href="img/sprite_auto.svg#twitter-icon"></use>
+                  </svg>
+                </a>
+              </li>
             </ul>
           </div>
         </div>

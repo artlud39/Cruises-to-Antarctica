@@ -24,7 +24,14 @@
 @include vp-767 {
   .site-list {
     flex-direction: column;
-    gap: 0;
+    gap: 10px;
+  }
+
+  .site-list__item {
+    position: relative;
+    height: 40px;
+    display: flex;
+    align-items: center;
   }
 
   .site-list__item-link {
@@ -33,13 +40,15 @@
     color: $color-tangaroa;
     padding: 0;
     padding-left: 10px;
-  }
 
-  .site-list__item {
-    height: 40px;
-    display: flex;
-    align-items: center;
-
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    }
   }
 }
 
