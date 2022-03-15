@@ -1,8 +1,8 @@
 .page-header {
   min-height: 650px;
   z-index: 10;
-  padding-top: 35px;
-  background-color: #c1d5f0;
+  padding-top: 33px;
+  background-color: $color-periwinkle;
   background-image: url("../../img/content/background-img-desktop.jpg");
   background-position: 0 0;
   background-size: cover;
@@ -28,14 +28,14 @@
 }
 
 .page-header__intro {
-  margin-top: 210px;
+  margin-top: 191px;
   margin-left: 95px;
 }
 
 .page-header__intro-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 13px;
 }
 
 .page-header__intro-title {
