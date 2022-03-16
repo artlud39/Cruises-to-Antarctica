@@ -1153,6 +1153,274 @@ button,
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  padding: 50px 60px;
+  min-height: 555px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.booking__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.booking__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.booking__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  color: #011C40;
+}
+
+.booking__text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #011C40;
+}
+
+.booking__form-wrapper {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 35px;
+  min-width: 403px;
+  max-width: 403px;
+  background-color: #011C40;
+  padding: 50px;
+  -webkit-box-shadow: 0px 4px 45px rgba(1, 28, 64, 0.15);
+  box-shadow: 0px 4px 45px rgba(1, 28, 64, 0.15);
+}
+
+.booking__form-text {
+  margin: 0;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #f9fbfd;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.form__fieldset {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 20px;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.form__fieldset p {
+  margin: 0;
+}
+
+.form__input {
+  height: 43px;
+  width: 100%;
+  border: none;
+  background-color: #f9fbfd;
+  padding: 0 20px;
+}
+
+.form__input:hover,
+.form__input:focus {
+  background-color: #d8d8d9;
+}
+
+.form__input::-webkit-input-placeholder {
+  opacity: 0.7;
+}
+
+.form__input::-moz-placeholder {
+  opacity: 0.7;
+}
+
+.form__input:-ms-input-placeholder {
+  opacity: 0.7;
+}
+
+.form__input::-ms-input-placeholder {
+  opacity: 0.7;
+}
+
+.form__input::placeholder {
+  opacity: 0.7;
+}
+
+.form__label-agreement {
+  position: relative;
+  font-size: 10px;
+  line-height: 13px;
+  color: #f9fbfd;
+  padding-left: 23px;
+  cursor: pointer;
+}
+
+.form__label-agreement::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  background-color: #f9fbfd;
+  -webkit-transform: translateY(-25%);
+  -ms-transform: translateY(-25%);
+  transform: translateY(-25%);
+}
+
+.form__input-checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 3px;
+  width: 18px;
+  height: 18px;
+  background-image: url("../../img/svg/tick-form-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.form__input-checkbox:hover + label::before,
+.form__input-checkbox:focus + label::before {
+  background-color: #d8d8d9;
+}
+
+.form__button {
+  width: 100%;
+  height: 43px;
+  background-color: #f9fbfd;
+  border: none;
+  padding: 0;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  color: #011C40;
+  cursor: pointer;
+}
+
+.form__button:hover,
+.form__button:focus {
+  background-color: #d8d8d9;
+}
+
+.contacts {
+  padding: 120px 0;
+}
+
+.contacts__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 100px;
+}
+
+.contacts__map {
+  width: 560px;
+  height: 306px;
+}
+
+.contacts__inner {
+  max-width: 500px;
+}
+
+.contacts__intro {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #011C40;
+  margin: 0;
+  padding-bottom: 40px;
+}
+
+.contacts__address {
+  position: relative;
+  color: #011C40;
+  margin: 0;
+  padding-bottom: 33px;
+  padding-left: 28px;
+}
+
+.contacts__address::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 18px;
+  height: 22px;
+  background-image: url("../../img/svg/pin-icon.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.contacts__tel {
+  position: relative;
+  color: #011C40;
+  padding-left: 28px;
+}
+
+.contacts__tel::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  background-image: url("../../img/svg/tel-icon.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .page-footer {
@@ -1214,7 +1482,7 @@ button,
   gap: 15px 33px;
 }
 
-.site-list__item-link-footer {
+.site-list-footer__item-link {
   font-weight: 500;
   line-height: 20px;
   color: #f9fbfd;
@@ -1583,6 +1851,53 @@ button,
     background-image: url("../../img/content/catalog/cruise-8-img-tablet.jpg");
   }
 
+  .booking {
+    padding: 100px;
+    min-height: 805px;
+    background-image: url("../../img/content/background-form-img-tablet.jpg");
+  }
+
+  .booking__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 60px;
+  }
+
+  .booking__inner {
+    text-align: center;
+  }
+
+  .booking__title {
+    font-size: 34px;
+    line-height: 51px;
+  }
+
+  .booking__form-wrapper {
+    top: auto;
+    bottom: 100px;
+    right: 163px;
+  }
+
+  .contacts__wrapper {
+    gap: 30px;
+  }
+
+  .contacts__map {
+    width: 324px;
+    height: 335px;
+  }
+
   .page-footer {
     min-height: 120px;
   }
@@ -1825,6 +2140,41 @@ button,
     background-image: url("../../img/content/catalog/cruise-8-img-mobile.jpg");
   }
 
+  .booking {
+    padding: 65px 0;
+    min-height: 760px;
+    background-image: url("../../img/content/background-form-img-mobile.jpg");
+  }
+
+  .booking__title {
+    font-size: 24px;
+    line-height: 31px;
+  }
+
+  .booking__text {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .booking__form-wrapper {
+    min-width: 290px;
+    max-width: 290px;
+    padding: 40px 30px;
+  }
+
+  .contacts__wrapper {
+    gap: 40px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .contacts__map {
+    width: 290px;
+    height: 316px;
+  }
+
   .page-footer {
     min-height: 283px;
   }
@@ -1870,7 +2220,7 @@ button,
     gap: 0;
   }
 
-  .site-list__item-link-footer {
+  .site-list-footer__item-link {
     padding-left: 0;
   }
 

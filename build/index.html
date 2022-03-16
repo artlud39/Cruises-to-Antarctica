@@ -57,11 +57,12 @@
           </div>
           <div class="intro__img-wrapper">
             <picture>
-              <!-- <source type="image/webp" media="(max-width: 768px)"
-                  srcset="img/photo-city-desktop.webp 1x, img/photo-city-desktop@2x.webp 2x">
-                <source type="image/webp" media="(max-width: 1024px)"
-                  srcset="img/photo-city-tablet.webp 1x, img/photo-city-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/photo-city-mobile.webp 1x, img/photo-city-mobile@2x.webp 2x"> -->
+              <!-- <source type="image/webp" media="(max-width: 767px)"
+                srcset="img/photo-city-mobile.webp 1x, img/photo-city-mobile@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 1023px)"
+                srcset="img/photo-city-tablet.webp 1x, img/photo-city-tablet@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 1024px)"
+                srcset="img/photo-city-desktop.webp 1x, img/photo-city-desktop@2x.webp 2x"> -->
               <source media="(max-width: 767px)"
                 srcset="img/content/penguins-img-mobile.jpg, img/content/penguins-img-mobile@2x.jpg 2x">
               <source media="(max-width: 1023px)"
@@ -248,20 +249,61 @@
 
       <section class="page-main__booking booking">
         <div class="booking__wrapper container">
-          <h2 class="booking__title">Раннее бронирование</h2>
-          <p class="booking__text">
-            Забронируйте тур за&nbsp;3-6 месяцев до&nbsp;даты выезда и&nbsp;сэкономьте до&nbsp;50%
-          </p>
-        </div>
-        <div class="booking__form-wrapper form">
-          <div class="form__wrapper">
-            <form class="form-from" action="#" method="post">
-
-            </form>
+          <div class="booking__inner">
+            <h2 class="booking__title">Раннее бронирование</h2>
+            <p class="booking__text">
+              Забронируйте тур за&nbsp;3-6 месяцев до&nbsp;даты выезда и&nbsp;сэкономьте до&nbsp;50%
+            </p>
           </div>
-
+          <div class="booking__form-wrapper">
+            <p class="booking__form-text">Оставьте заявку и&nbsp;мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время</p>
+            <div class="booking__form-inner">
+              <form class="form" action="#" method="post">
+                <fieldset class="form__fieldset">
+                  <p>
+                    <label for="name"></label>
+                    <input class="form__input form__input--name" type="text" name="name" id="name" placeholder="Имя">
+                  </p>
+                  <p>
+                    <label for="tel"></label>
+                    <input class="form__input form__input--tel" type="tel" name="tel" id="tel" placeholder="Телефон">
+                  </p>
+                  <p>
+                    <label for="email"></label>
+                    <input class="form__input form__input--email" type="email" name="email" id="email"
+                      placeholder="Email">
+                  </p>
+                  <p class="form__agreement-inner">
+                    <input class="form__input-checkbox visually-hidden" type="checkbox" name="agreement" id="agreement">
+                    <label class="form__label-agreement" for="agreement">Я&nbsp;согласен на&nbsp;обработку моих
+                      персональных данных</label>
+                  </p>
+                </fieldset>
+                <button class="form__button" type="submit">Оставить заявку</button>
+              </form>
+            </div>
+          </div>
         </div>
 
+      </section>
+
+      <section class="page-main__contacts contacts">
+        <h2 class="visually-hidden">Как нас найти</h2>
+        <div class="contacts__wrapper container">
+          <div class="contacts__map-wrapper">
+            <iframe class="contacts__map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.320858716173472!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1647429017659!5m2!1sru!2sru"
+              width="560" height="306" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+          <div class="contacts__inner">
+            <p class="contacts__intro">
+              У вас ещё остались вопросы или сомнения?
+              Приезжайте к нам в офис и мы вам все расскажем.
+            </p>
+            <p class="contacts__address">г. Санкт Петербург, ул. Большая Конюшенная, 19/8</p>
+            <a class="contacts__tel" href="tel:88002000000">8-800-200-00-00</a>
+          </div>
+        </div>
       </section>
     </main>
 
@@ -277,11 +319,11 @@
           </div>
           <nav class="page-footer__nav footer-nav">
             <ul class="footer-nav__list site-list-footer">
-              <li class="site-list__item-footer"><a class="site-list__item-link-footer" href="#">Преимущества </a></li>
-              <li class="site-list__item-footer"><a class="site-list__item-link-footer" href="#">Направления</a></li>
-              <li class="site-list__item-footer"><a class="site-list__item-link-footer" href="#">Ближайшие круизы</a>
+              <li class="site-list-footer__item"><a class="site-list-footer__item-link" href="#">Преимущества </a></li>
+              <li class="site-list-footer__item"><a class="site-list-footer__item-link" href="#">Направления</a></li>
+              <li class="site-list-footer__item"><a class="site-list-footer__item-link" href="#">Ближайшие круизы</a>
               </li>
-              <li class="site-list__item-footer"><a class="site-list__item-link-footer" href="#">Контакты</a></li>
+              <li class="site-list-footer__item"><a class="site-list-footer__item-link" href="#">Контакты</a></li>
             </ul>
           </nav>
         </div>
@@ -312,8 +354,6 @@
         </div>
       </div>
     </footer>
-    <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
-    <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
   </div>
 
   <div class="modal modal--preload" data-modal="feedback">
