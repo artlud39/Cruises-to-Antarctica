@@ -7,18 +7,37 @@
   justify-content: center;
   align-items: center;
   gap: 100px;
+
+  @include vp-1023 {
+    gap: 30px;
+  }
+
+  @include vp-767 {
+    gap: 40px;
+    flex-direction: column;
+  }
 }
 
 .contacts__map {
   width: 560px;
   height: 306px;
+
+  @include vp-1023 {
+    width: 324px;
+    height: 335px;
+  }
+
+  @include vp-767 {
+    width: 290px;
+    height: 316px;
+  }
 }
 
 .contacts__inner {
   max-width: 500px;
 }
 
-.contacts__intro {
+.contacts__inner p {
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
@@ -27,70 +46,44 @@
   padding-bottom: 40px;
 }
 
-.contacts__address {
+.contacts__info-wrapper p,
+.contacts__info-wrapper a {
   position: relative;
   color: $color-tangaroa;
   margin: 0;
-  padding-bottom: 33px;
   padding-left: 28px;
+  font-weight: 400;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.contacts__info-wrapper p {
+  padding-bottom: 33px;
+
+  &::before {
     width: 18px;
     height: 22px;
     background-image: url("../../img/svg/pin-icon.svg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
   }
 }
 
-.contacts__tel {
-  position: relative;
-  color: $color-tangaroa;
-  padding-left: 28px;
-
+.contacts__info-wrapper a {
   &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 18px;
     height: 18px;
     background-image: url("../../img/svg/tel-icon.svg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-}
-
-
-@include vp-1439 {
-
-}
-
-@include vp-1023 {
-
-  .contacts__wrapper {
-    gap: 30px;
   }
 
-  .contacts__map {
-    width: 324px;
-    height: 335px;
-  }
-}
-
-@include vp-767 {
-  .contacts__wrapper {
-    gap: 40px;
-    flex-direction: column;
-  }
-  .contacts__map {
-    width: 290px;
-    height: 316px;
+  &:hover,
+  &:focus {
+    color: $color-torch-red;
   }
 }

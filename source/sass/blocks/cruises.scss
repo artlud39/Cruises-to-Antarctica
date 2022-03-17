@@ -1,20 +1,42 @@
 .cruises {
   padding: 120px 15px;
+
+  @include vp-1023 {
+    padding: 100px 15px;
+  }
+
+  @include vp-767 {
+    padding: 65px 15px;
+  }
 }
 
-.cruises__wrapepr {
+.cruises__wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 60px;
+
+  @include vp-767 {
+    gap: 40px;
+  }
 }
 
-.cruises__title {
+.cruises__wrapper h2 {
   margin: 0;
   font-weight: 600;
   font-size: 28px;
   line-height: 42px;
   color: $color-tangaroa;
+
+  @include vp-1023 {
+    font-size: 26px;
+    line-height: 39px;
+  }
+
+  @include vp-767 {
+    font-size: 24px;
+    line-height: 36px;
+  }
 }
 
 .cruises__list {
@@ -33,50 +55,120 @@
   overflow: hidden;
   width: 260px;
   min-height: 386px;
-  background-color: $color-periwinkle;
   background: $tangaroa-to-tangaroa;
+  background-color: $color-periwinkle;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   display: flex;
   align-items: flex-end;
 
+  @include vp-1023 {
+    width: 309px;
+  }
+
+  @include vp-767 {
+    width: 270px;
+  }
 }
 
 .cruises__item--first {
   background-image: url("../../img/content/catalog/cruise-1-img-desktop.jpg");
+
+  @include vp-1023 {
+    background-image: url("../../img/content/catalog/cruise-1-img-tablet.jpg");
+  }
+
+  @include vp-767 {
+    background-image: url("../../img/content/catalog/cruise-1-img-mobile.jpg");
+  }
 }
 
 .cruises__item--second {
   background-image: url("../../img/content/catalog/cruise-1-img-desktop.jpg");
+
+  @include vp-1023 {
+    background-image: url("../../img/content/catalog/cruise-1-img-tablet.jpg");
+  }
+
+  @include vp-767 {
+    background-image: url("../../img/content/catalog/cruise-1-img-mobile.jpg");
+  }
 }
 
 .cruises__item--third {
   background-image: url("../../img/content/catalog/cruise-3-img-desktop.jpg");
+
+  @include vp-1023 {
+    background-image: url("../../img/content/catalog/cruise-3-img-tablet.jpg");
+  }
+
+  @include vp-767 {
+    background-image: url("../../img/content/catalog/cruise-3-img-mobile.jpg");
+  }
 }
 
 .cruises__item--fourth {
   background-image: url("../../img/content/catalog/cruise-4-img-desktop.jpg");
+
+  @include vp-1023 {
+    background-image: url("../../img/content/catalog/cruise-4-img-tablet.jpg");
+  }
+
+  @include vp-767 {
+    background-image: url("../../img/content/catalog/cruise-4-img-mobile.jpg");
+  }
 }
 
 .cruises__item--fifth {
   background-image: url("../../img/content/catalog/cruise-5-img-desktop.jpg");
+
+  @include vp-1023 {
+    background-image: url("../../img/content/catalog/cruise-5-img-tablet.jpg");
+  }
+
+  @include vp-767 {
+    background-image: url("../../img/content/catalog/cruise-5-img-mobile.jpg");
+  }
 }
 
 .cruises__item--sixth {
   background-image: url("../../img/content/catalog/cruise-6-img-desktop.jpg");
+
+  @include vp-1023 {
+    background-image: url("../../img/content/catalog/cruise-6-img-tablet.jpg");
+  }
+
+  @include vp-767 {
+    background-image: url("../../img/content/catalog/cruise-6-img-mobile.jpg");
+  }
 }
 
 .cruises__item--seventh {
   background-image: url("../../img/content/catalog/cruise-7-img-desktop.jpg");
+
+  @include vp-1023 {
+    background-image: url("../../img/content/catalog/cruise-7-img-tablet.jpg");
+  }
+
+  @include vp-767 {
+    background-image: url("../../img/content/catalog/cruise-7-img-mobile.jpg");
+  }
 }
 
 .cruises__item--eighth {
   background-image: url("../../img/content/catalog/cruise-8-img-desktop.jpg");
+
+  @include vp-1023 {
+    background-image: url("../../img/content/catalog/cruise-8-img-tablet.jpg");
+  }
+
+  @include vp-767 {
+    background-image: url("../../img/content/catalog/cruise-8-img-mobile.jpg");
+  }
 }
 
-
-.cruises__item-title {
+.cruises__item h3 {
   margin: 0;
   font-weight: 500;
   font-size: 18px;
@@ -99,7 +191,7 @@
   justify-content: space-between;
   background-color: $color-tangaroa;
   padding: 30px 25px;
-  transition: bottom .3s linear;
+  transition: bottom 0.3s linear;
 }
 
 .cruises__item:hover .cruises__item-info-wrapper,
@@ -107,26 +199,17 @@
   bottom: 0;
 }
 
-.cruises__item:hover .cruises__item-title,
-.cruises__item:focus .cruises__item-title {
-  display: none;
-}
-
 .cruises__item-info-inner {
   display: flex;
   flex-direction: column;
 }
 
-.cruises__item-info-title {
-  margin: 0;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 27px;
-  color: $color-alice-blue;
+.cruises__item-info-inner h3 {
+  padding-left: 0;
   padding-bottom: 13px;
 }
 
-.cruises__item-subtitle {
+.cruises__item-info-inner h4 {
   margin: 0;
   font-weight: 500;
   font-size: 14px;
@@ -134,7 +217,7 @@
   color: $color-alice-blue;
 }
 
-.cruises__item-text {
+.cruises__item-info-inner p {
   margin: 0;
   font-size: 14px;
   line-height: 20px;
@@ -142,7 +225,7 @@
   padding-bottom: 12px;
 }
 
-.cruises__item-button {
+.cruises__item-info-wrapper a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -161,108 +244,5 @@
     &:focus {
       opacity: 0.8;
     }
-  }
-}
-
-
-@include vp-1439 {
-
-}
-
-@include vp-1023 {
-  .cruises {
-    padding: 100px 15px;
-  }
-
-  .cruises__title {
-    font-size: 26px;
-    line-height: 39px;
-  }
-
-  .cruises__item {
-    width: 309px;
-  }
-
-  .cruises__item--first {
-    background-image: url("../../img/content/catalog/cruise-1-img-tablet.jpg");
-  }
-
-  .cruises__item--second {
-    background-image: url("../../img/content/catalog/cruise-1-img-tablet.jpg");
-  }
-
-  .cruises__item--third {
-    background-image: url("../../img/content/catalog/cruise-3-img-tablet.jpg");
-  }
-
-  .cruises__item--fourth {
-    background-image: url("../../img/content/catalog/cruise-4-img-tablet.jpg");
-  }
-
-  .cruises__item--fifth {
-    background-image: url("../../img/content/catalog/cruise-5-img-tablet.jpg");
-  }
-
-  .cruises__item--sixth {
-    background-image: url("../../img/content/catalog/cruise-6-img-tablet.jpg");
-  }
-
-  .cruises__item--seventh {
-    background-image: url("../../img/content/catalog/cruise-7-img-tablet.jpg");
-  }
-
-  .cruises__item--eighth {
-    background-image: url("../../img/content/catalog/cruise-8-img-tablet.jpg");
-  }
-}
-
-@include vp-767 {
-  .cruises {
-    padding: 65px 15px;
-  }
-
-  .cruises__wrapepr {
-    gap: 40px;
-  }
-
-  .cruises__title {
-    font-size: 24px;
-    line-height: 36px;
-  }
-
-  .cruises__item {
-    width: 270px;
-  }
-
-  .cruises__item--first {
-    background-image: url("../../img/content/catalog/cruise-1-img-mobile.jpg");
-  }
-
-  .cruises__item--second {
-    background-image: url("../../img/content/catalog/cruise-1-img-mobile.jpg");
-  }
-
-  .cruises__item--third {
-    background-image: url("../../img/content/catalog/cruise-3-img-mobile.jpg");
-  }
-
-  .cruises__item--fourth {
-    background-image: url("../../img/content/catalog/cruise-4-img-mobile.jpg");
-  }
-
-  .cruises__item--fifth {
-    background-image: url("../../img/content/catalog/cruise-5-img-mobile.jpg");
-  }
-
-  .cruises__item--sixth {
-    background-image: url("../../img/content/catalog/cruise-6-img-mobile.jpg");
-  }
-
-  .cruises__item--seventh {
-    background-image: url("../../img/content/catalog/cruise-7-img-mobile.jpg");
-  }
-
-  .cruises__item--eighth {
-    background-image: url("../../img/content/catalog/cruise-8-img-mobile.jpg");
   }
 }

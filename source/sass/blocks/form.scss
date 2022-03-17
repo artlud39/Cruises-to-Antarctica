@@ -17,7 +17,7 @@
   margin: 0;
 }
 
-.form__input {
+.form__input-inner input {
   height: 43px;
   width: 100%;
   border: none;
@@ -27,7 +27,6 @@
   &:hover,
   &:focus {
     background-color: $color-quartz;
-
   }
 
   &::placeholder {
@@ -55,7 +54,20 @@
   transform: translateY(-25%);
 }
 
-.form__input-checkbox:checked + label::after {
+.form__agreement-inner input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+}
+
+.form__agreement-inner input:checked + label::after {
   content: "";
   position: absolute;
   top: 1px;
@@ -67,11 +79,9 @@
   background-position: 0 0;
 }
 
-.form__input-checkbox {
-  &:hover + label::before,
-  &:focus + label::before {
-    background-color: $color-quartz;
-  }
+.form__agreement-inner input:hover + label::before,
+.form__agreement-inner input:focus + label::before {
+  background-color: $color-quartz;
 }
 
 .form__button {
@@ -90,16 +100,4 @@
   &:focus {
     background-color: $color-quartz;
   }
-}
-
-@include vp-1439 {
-
-}
-
-@include vp-1023 {
-
-}
-
-@include vp-767 {
-
 }

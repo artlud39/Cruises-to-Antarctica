@@ -1,9 +1,8 @@
-const navMain = document.querySelector('.main-nav');
-const navToggle = document.querySelector('.burger');
-
-navMain.classList.remove('main-nav--nojs');
+const navMain = document.querySelector('[data-main-nav]');
+const navToggle = document.querySelector('[data-burger]');
 
 function openMainMenu() {
+  navMain.classList.remove('main-nav--nojs');
   navToggle.addEventListener('click', function () {
     if (navMain.classList.contains('main-nav--closed')) {
       navMain.classList.remove('main-nav--closed');
@@ -16,6 +15,5 @@ function openMainMenu() {
     }
   });
 }
-
 
 export {openMainMenu};
