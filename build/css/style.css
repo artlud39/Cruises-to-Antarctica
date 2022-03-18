@@ -413,7 +413,7 @@ template {
   font-weight: 700;
   font-family: "Montserrat";
   font-display: swap;
-  src: url("../../fonts/montserrat-bold.woff2") format("woff2"), url("../../fonts/montserrat-bold.woff") format("woff");
+  src: url("../../fonts/montserrat-extrabold.woff2") format("woff2"), url("../../fonts/montserrat-extrabold.woff") format("woff");
 }
 
 *,
@@ -667,7 +667,6 @@ button,
   min-width: -webkit-fit-content;
   min-width: -moz-fit-content;
   min-width: fit-content;
-  z-index: 10;
 }
 
 .page-header__logo-img {
@@ -720,7 +719,6 @@ button,
 
 .site-list__item {
   position: relative;
-  height: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -898,7 +896,6 @@ button,
   margin: 0;
   font-weight: 600;
   font-size: 28px;
-  line-height: 42px;
   color: #011c40;
 }
 
@@ -922,7 +919,7 @@ button,
   background-color: #f9fbfd;
   max-width: 360px;
   padding: 30px;
-  padding-top: 87px;
+  padding-top: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -930,7 +927,7 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  gap: 20px;
+  gap: 5px;
 }
 
 .advantage__item::before {
@@ -1000,7 +997,6 @@ button,
   margin: 0;
   font-weight: 600;
   font-size: 28px;
-  line-height: 42px;
   color: #011c40;
 }
 
@@ -1229,7 +1225,7 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  gap: 35px;
+  gap: 25px;
   min-width: 403px;
   max-width: 403px;
   background-color: #011c40;
@@ -1242,7 +1238,6 @@ button,
   margin: 0;
   font-weight: 500;
   font-size: 18px;
-  line-height: 27px;
   color: #f9fbfd;
 }
 
@@ -1254,7 +1249,7 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  gap: 30px;
+  gap: 25px;
 }
 
 .form__fieldset {
@@ -1289,22 +1284,27 @@ button,
 }
 
 .form__input-inner input::-webkit-input-placeholder {
+  font-size: 14px;
   opacity: 0.7;
 }
 
 .form__input-inner input::-moz-placeholder {
+  font-size: 14px;
   opacity: 0.7;
 }
 
 .form__input-inner input:-ms-input-placeholder {
+  font-size: 14px;
   opacity: 0.7;
 }
 
 .form__input-inner input::-ms-input-placeholder {
+  font-size: 14px;
   opacity: 0.7;
 }
 
 .form__input-inner input::placeholder {
+  font-size: 14px;
   opacity: 0.7;
 }
 
@@ -1315,6 +1315,9 @@ button,
   color: #f9fbfd;
   padding-left: 23px;
   cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .form__label-agreement::before {
@@ -1408,7 +1411,6 @@ button,
 .contacts__inner p {
   font-weight: 500;
   font-size: 18px;
-  line-height: 27px;
   color: #011c40;
   margin: 0;
   padding-bottom: 40px;
@@ -1419,6 +1421,7 @@ button,
   position: relative;
   color: #011c40;
   margin: 0;
+  font-size: 16px;
   padding-left: 28px;
   font-weight: 400;
 }
@@ -1435,7 +1438,7 @@ button,
 }
 
 .contacts__info-wrapper p {
-  padding-bottom: 33px;
+  padding-bottom: 25px;
 }
 
 .contacts__info-wrapper p::before {
@@ -1518,7 +1521,6 @@ button,
   font-weight: 500;
   line-height: 20px;
   color: #f9fbfd;
-  padding: 5px;
 }
 
 .site-list-footer__item-link:hover,
@@ -1742,6 +1744,7 @@ button,
   }
 
   .page-header {
+    padding-top: 27px;
     min-height: 638px;
     background-image: url("../../img/content/background-img-tablet.jpg");
   }
@@ -1752,7 +1755,7 @@ button,
   }
 
   .page-header__intro {
-    margin-top: 210px;
+    margin-top: 214px;
     margin-left: 0;
   }
 
@@ -1764,6 +1767,10 @@ button,
   .page-header__intro-text {
     font-size: 18px;
     line-height: 22px;
+  }
+
+  .site-list {
+    gap: 15px 24px;
   }
 
   .site-list__item-link {
@@ -1798,12 +1805,16 @@ button,
   }
 
   .advantage {
+    background-image: url("../../img/content/background-advantages-img-tablet.jpg");
     padding: 100px 0;
+  }
+
+  .advantage__wrapper {
+    gap: 54px;
   }
 
   .advantage__wrapper h2 {
     font-size: 26px;
-    line-height: 39px;
   }
 
   .advantage__list {
@@ -1812,9 +1823,7 @@ button,
 
   .advantage__item {
     max-width: 206px;
-    padding: 20px;
-    padding-top: 76px;
-    gap: 20px;
+    padding: 69px 15px 25px 20px;
   }
 
   .advantage__item::before {
@@ -1845,7 +1854,6 @@ button,
 
   .cruises__wrapper h2 {
     font-size: 26px;
-    line-height: 39px;
   }
 
   .cruises__item {
@@ -1907,6 +1915,10 @@ button,
     gap: 60px;
   }
 
+  .booking__wrapper {
+    gap: 40px;
+  }
+
   .booking__inner {
     text-align: center;
   }
@@ -1920,6 +1932,18 @@ button,
     top: auto;
     bottom: 100px;
     right: 163px;
+  }
+
+  .form__label-agreement::before {
+    top: 5px;
+  }
+
+  .form__agreement-inner input:checked + label::after {
+    top: 6px;
+  }
+
+  .contacts {
+    padding: 100px 0;
   }
 
   .contacts__wrapper {
@@ -1976,9 +2000,60 @@ button,
   }
 }
 
+@media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
+  .page-header {
+    background-image: url("../../img/content/background-img-tablet@2x.jpg");
+  }
+
+  .advantage {
+    background-image: url("../../img/content/background-advantages-img-tablet@2x.jpg");
+  }
+
+  .cruises__item--first {
+    background-image: url("../../img/content/catalog/cruise-1-img-tablet@2x.jpg");
+  }
+
+  .cruises__item--second {
+    background-image: url("../../img/content/catalog/cruise-1-img-tablet@2x.jpg");
+  }
+
+  .cruises__item--third {
+    background-image: url("../../img/content/catalog/cruise-3-img-tablet@2x.jpg");
+  }
+
+  .cruises__item--fourth {
+    background-image: url("../../img/content/catalog/cruise-4-img-tablet@2x.jpg");
+  }
+
+  .cruises__item--fifth {
+    background-image: url("../../img/content/catalog/cruise-5-img-tablet@2x.jpg");
+  }
+
+  .cruises__item--sixth {
+    background-image: url("../../img/content/catalog/cruise-6-img-tablet@2x.jpg");
+  }
+
+  .cruises__item--seventh {
+    background-image: url("../../img/content/catalog/cruise-7-img-tablet@2x.jpg");
+  }
+
+  .cruises__item--eighth {
+    background-image: url("../../img/content/catalog/cruise-8-img-tablet@2x.jpg");
+  }
+
+  .booking {
+    background-image: url("../../img/content/background-form-img-tablet@2x.jpg");
+  }
+}
+
 @media (max-width: 767px) {
   .container {
     padding: 0 15px;
+  }
+
+  .page-header {
+    min-height: 500px;
+    background-image: url("../../img/content/background-img-mobile.jpg");
   }
 
   .page-header__logo-img {
@@ -1987,7 +2062,7 @@ button,
   }
 
   .page-header__intro {
-    margin-top: 185px;
+    margin-top: 128px;
   }
 
   .page-header__intro-title {
@@ -2000,20 +2075,36 @@ button,
     line-height: 22px;
   }
 
+  .main-nav {
+    position: relative;
+  }
+
   .main-nav--closed .main-nav__list {
     display: none;
   }
 
   .main-nav--opened {
     position: fixed;
+    left: 8px;
     top: 0;
     bottom: 0;
     right: 8px;
     background-color: #f9fbfd;
     padding: 75px 23px 10px 22px;
-    width: calc(100% - (20% + 60px));
     min-width: 285px;
-    max-width: 320px;
+  }
+
+  .main-nav--opened::before {
+    content: "";
+    position: absolute;
+    top: 28px;
+    left: 22px;
+    width: 42px;
+    height: 22px;
+    background-image: url("../../img/svg/logo-icon-black.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
 
   .main-nav--opened .main-nav__list {
@@ -2046,6 +2137,10 @@ button,
     -ms-flex-direction: column;
     flex-direction: column;
     gap: 10px;
+  }
+
+  .site-list__item {
+    height: 40px;
   }
 
   .site-list__item-link {
@@ -2101,16 +2196,16 @@ button,
   }
 
   .advantage {
+    background-image: url("../../img/content/background-advantages-img-mobile.jpg");
     padding: 65px 0;
   }
 
   .advantage__wrapper {
-    gap: 40px;
+    gap: 30px;
   }
 
   .advantage__wrapper h2 {
     font-size: 26px;
-    line-height: 39px;
   }
 
   .advantage__list {
@@ -2123,7 +2218,6 @@ button,
   .advantage__item {
     max-width: 290px;
     min-height: 250px;
-    padding: 76px 15px 25px 20px;
   }
 
   .cruises {
@@ -2131,12 +2225,11 @@ button,
   }
 
   .cruises__wrapper {
-    gap: 40px;
+    gap: 30px;
   }
 
   .cruises__wrapper h2 {
     font-size: 24px;
-    line-height: 36px;
   }
 
   .cruises__item {
@@ -2181,6 +2274,11 @@ button,
     background-image: url("../../img/content/background-form-img-mobile.jpg");
   }
 
+  .booking__inner {
+    gap: 5px;
+    padding: 0 17px;
+  }
+
   .booking__inner h2 {
     font-size: 24px;
     line-height: 31px;
@@ -2197,12 +2295,26 @@ button,
     padding: 40px 30px;
   }
 
+  .booking__form-wrapper p {
+    text-align: center;
+  }
+
+  .contacts {
+    padding: 60px 0;
+  }
+
   .contacts__wrapper {
     gap: 40px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+  }
+
+  .contacts__map-wrapper {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
   }
 
   .contacts__map {
@@ -2270,5 +2382,97 @@ button,
 
   .modal--fit-content .modal__content {
     width: 100%;
+  }
+}
+
+@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
+  .page-header {
+    background-image: url("../../img/content/background-img-mobile@2x.jpg");
+  }
+
+  .advantage {
+    background-image: url("../../img/content/background-advantages-img-mobile@2x.jpg");
+  }
+
+  .cruises__item--first {
+    background-image: url("../../img/content/catalog/cruise-1-img-mobile@2x.jpg");
+  }
+
+  .cruises__item--second {
+    background-image: url("../../img/content/catalog/cruise-1-img-mobile@2x.jpg");
+  }
+
+  .cruises__item--third {
+    background-image: url("../../img/content/catalog/cruise-3-img-mobile@2x.jpg");
+  }
+
+  .cruises__item--fourth {
+    background-image: url("../../img/content/catalog/cruise-4-img-mobile@2x.jpg");
+  }
+
+  .cruises__item--fifth {
+    background-image: url("../../img/content/catalog/cruise-5-img-mobile@2x.jpg");
+  }
+
+  .cruises__item--sixth {
+    background-image: url("../../img/content/catalog/cruise-6-img-mobile@2x.jpg");
+  }
+
+  .cruises__item--seventh {
+    background-image: url("../../img/content/catalog/cruise-7-img-mobile@2x.jpg");
+  }
+
+  .cruises__item--eighth {
+    background-image: url("../../img/content/catalog/cruise-8-img-mobile@2x.jpg");
+  }
+
+  .booking {
+    background-image: url("../../img/content/background-form-img-mobile@2x.jpg");
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .page-header {
+    background-image: url("../../img/content/background-img-desktop@2x.jpg");
+  }
+
+  .advantage {
+    background-image: url("../../img/content/background-advantages-img-desktop@2x.jpg");
+  }
+
+  .cruises__item--first {
+    background-image: url("../../img/content/catalog/cruise-1-img-desktop@2x.jpg");
+  }
+
+  .cruises__item--second {
+    background-image: url("../../img/content/catalog/cruise-1-img-desktop@2x.jpg");
+  }
+
+  .cruises__item--third {
+    background-image: url("../../img/content/catalog/cruise-3-img-desktop@2x.jpg");
+  }
+
+  .cruises__item--fourth {
+    background-image: url("../../img/content/catalog/cruise-4-img-desktop@2x.jpg");
+  }
+
+  .cruises__item--fifth {
+    background-image: url("../../img/content/catalog/cruise-5-img-desktop@2x.jpg");
+  }
+
+  .cruises__item--sixth {
+    background-image: url("../../img/content/catalog/cruise-6-img-desktop@2x.jpg");
+  }
+
+  .cruises__item--seventh {
+    background-image: url("../../img/content/catalog/cruise-7-img-desktop@2x.jpg");
+  }
+
+  .cruises__item--eighth {
+    background-image: url("../../img/content/catalog/cruise-8-img-desktop@2x.jpg");
+  }
+
+  .booking {
+    background-image: url("../../img/content/background-form-img-desktop@2x.jpg");
   }
 }

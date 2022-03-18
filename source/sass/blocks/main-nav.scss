@@ -1,18 +1,34 @@
 @include vp-767 {
+  .main-nav {
+    position: relative;
+  }
+
   .main-nav--closed .main-nav__list {
     display: none;
   }
 
   .main-nav--opened {
     position: fixed;
+    left: 8px;
     top: 0;
     bottom: 0;
     right: 8px;
     background-color: $color-alice-blue;
     padding: 75px 23px 10px 22px;
-    width: calc(100% - (20% + 60px));
     min-width: 285px;
-    max-width: 320px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 28px;
+      left: 22px;
+      width: 42px;
+      height: 22px;
+      background-image: url("../../img/svg/logo-icon-black.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
   }
 
   .main-nav--opened .main-nav__list {
