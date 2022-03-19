@@ -1399,6 +1399,12 @@ button,
   gap: 100px;
 }
 
+.contacts__map-wrapper {
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
+  order: 1;
+}
+
 .contacts__map {
   width: 560px;
   height: 306px;
