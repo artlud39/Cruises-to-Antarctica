@@ -1,30 +1,30 @@
 .advantage {
   background-color: $color-alice-blue;
-  background-image: url("../../img/content/background-advantages-img-desktop.jpg");
+  background-image: url("../img/content/background-advantages-img-desktop.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   padding: 120px 0;
 
   @include retina {
-    background-image: url("../../img/content/background-advantages-img-desktop@2x.jpg");
+    background-image: url("../img/content/background-advantages-img-desktop@2x.jpg");
   }
 
   @include vp-1023 {
-    background-image: url("../../img/content/background-advantages-img-tablet.jpg");
+    background-image: url("../img/content/background-advantages-img-tablet.jpg");
     padding: 100px 0;
 
     @include retina {
-      background-image: url("../../img/content/background-advantages-img-tablet@2x.jpg");
+      background-image: url("../img/content/background-advantages-img-tablet@2x.jpg");
     }
   }
 
   @include vp-767 {
-    background-image: url("../../img/content/background-advantages-img-mobile.jpg");
+    background-image: url("../img/content/background-advantages-img-mobile.jpg");
     padding: 65px 0;
 
     @include retina {
-      background-image: url("../../img/content/background-advantages-img-mobile@2x.jpg");
+      background-image: url("../img/content/background-advantages-img-mobile@2x.jpg");
     }
   }
 }
@@ -116,7 +116,7 @@
   top: 30px;
   width: 27px;
   height: 32px;
-  background-image: url("../../img/svg/ship-icon.svg");
+  background-image: url("../img/svg/ship-icon.svg");
 
   @include vp-1023 {
     top: 25px;
@@ -129,7 +129,7 @@
   top: 35px;
   width: 38px;
   height: 21px;
-  background-image: url("../../img/svg/tick-icon.svg");
+  background-image: url("../img/svg/tick-icon.svg");
 
   @include vp-1023 {
     top: 29px;
@@ -142,7 +142,7 @@
   top: 38px;
   width: 42px;
   height: 15px;
-  background-image: url("../../img/svg/boat-icon.svg");
+  background-image: url("../img/svg/boat-icon.svg");
 
   @include vp-1023 {
     top: 32px;
