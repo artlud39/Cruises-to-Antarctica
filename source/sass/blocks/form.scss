@@ -1,7 +1,7 @@
 .form {
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 31px;
 }
 
 .form__fieldset {
@@ -22,7 +22,7 @@
   width: 100%;
   border: none;
   background-color: $color-alice-blue;
-  padding: 0 20px;
+  padding: 0 16px;
 
   &:hover,
   &:focus {
@@ -33,6 +33,10 @@
     font-size: 14px;
     opacity: 0.7;
   }
+}
+
+.form__agreement-inner {
+  padding-top: 5px;
 }
 
 .form__label-agreement {

@@ -872,7 +872,7 @@ button,
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 120px 0;
+  padding: 118px 0;
 }
 
 .advantage__wrapper {
@@ -920,6 +920,7 @@ button,
   max-width: 360px;
   padding: 30px;
   padding-top: 80px;
+  padding-bottom: 26px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -927,7 +928,7 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  gap: 5px;
+  gap: 8px;
 }
 
 .advantage__item::before {
@@ -976,7 +977,7 @@ button,
 }
 
 .cruises {
-  padding: 120px 15px;
+  padding: 118px 15px 119px;
 }
 
 .cruises__wrapper {
@@ -1074,7 +1075,7 @@ button,
   font-size: 18px;
   line-height: 27px;
   color: #f9fbfd;
-  padding-bottom: 30px;
+  padding-bottom: 23px;
   padding-left: 30px;
 }
 
@@ -1097,7 +1098,7 @@ button,
   -ms-flex-pack: justify;
   justify-content: space-between;
   background-color: #011c40;
-  padding: 30px 25px;
+  padding: 30px 25px 35px;
   -webkit-transition: bottom 0.3s linear;
   -o-transition: bottom 0.3s linear;
   transition: bottom 0.3s linear;
@@ -1180,7 +1181,7 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 20px;
+  gap: 139px;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -1205,6 +1206,7 @@ button,
   font-size: 40px;
   line-height: 60px;
   color: #011c40;
+  padding-bottom: 10px;
 }
 
 .booking__inner p {
@@ -1213,6 +1215,8 @@ button,
   font-size: 18px;
   line-height: 27px;
   color: #011c40;
+  padding-bottom: 10px;
+  padding-right: 110px;
 }
 
 .booking__form-wrapper {
@@ -1225,11 +1229,12 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  gap: 25px;
+  gap: 27px;
   min-width: 403px;
   max-width: 403px;
+  min-height: 455px;
   background-color: #011c40;
-  padding: 50px;
+  padding: 43px 50px 49px;
   -webkit-box-shadow: 0 4px 45px rgba(1, 28, 64, 0.15);
   box-shadow: 0 4px 45px rgba(1, 28, 64, 0.15);
 }
@@ -1238,6 +1243,7 @@ button,
   margin: 0;
   font-weight: 500;
   font-size: 18px;
+  line-height: 27px;
   color: #f9fbfd;
 }
 
@@ -1249,7 +1255,7 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  gap: 25px;
+  gap: 31px;
 }
 
 .form__fieldset {
@@ -1275,7 +1281,7 @@ button,
   width: 100%;
   border: none;
   background-color: #f9fbfd;
-  padding: 0 20px;
+  padding: 0 16px;
 }
 
 .form__input-inner input:hover,
@@ -1306,6 +1312,10 @@ button,
 .form__input-inner input::placeholder {
   font-size: 14px;
   opacity: 0.7;
+}
+
+.form__agreement-inner {
+  padding-top: 5px;
 }
 
 .form__label-agreement {
@@ -1400,9 +1410,9 @@ button,
 }
 
 .contacts__map-wrapper {
-  -webkit-box-ordinal-group: 2;
-  -ms-flex-order: 1;
-  order: 1;
+  -webkit-box-ordinal-group: 1;
+  -ms-flex-order: 0;
+  order: 0;
 }
 
 .contacts__map {

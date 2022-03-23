@@ -4,7 +4,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 120px 0;
+  padding: 118px 0;
 
   @include retina {
     background-image: url("../img/content/background-advantages-img-desktop@2x.jpg");
@@ -84,9 +84,10 @@
   max-width: 360px;
   padding: 30px;
   padding-top: 80px;
+  padding-bottom: 26px;
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 8px;
 
   &::before {
     content: "";

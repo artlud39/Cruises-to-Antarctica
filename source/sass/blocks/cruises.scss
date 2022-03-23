@@ -1,5 +1,5 @@
 .cruises {
-  padding: 120px 15px;
+  padding: 118px 15px 119px;
 
   @include vp-1023 {
     padding: 100px 15px;
@@ -267,7 +267,7 @@
   font-size: 18px;
   line-height: 27px;
   color: $color-alice-blue;
-  padding-bottom: 30px;
+  padding-bottom: 23px;
   padding-left: 30px;
 }
 
@@ -283,7 +283,7 @@
   flex-direction: column;
   justify-content: space-between;
   background-color: $color-tangaroa;
-  padding: 30px 25px;
+  padding: 30px 25px 35px;
   transition: bottom 0.3s linear;
 }
 

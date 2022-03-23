@@ -27,7 +27,7 @@
 }
 
 .contacts__map-wrapper {
-  order: 1;
+  order: 0;
 
   @include vp-767 {
     order: 2;
