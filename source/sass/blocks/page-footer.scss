@@ -41,12 +41,16 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    gap: 30px;
+    gap: 29px;
   }
 }
 
 .page-footer__logo {
   min-width: fit-content;
+}
+
+.page-footer__logo a {
+  display: flex;
 }
 
 .page-footer__logo-img {

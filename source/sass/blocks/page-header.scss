@@ -14,7 +14,7 @@
   }
 
   @include vp-1023 {
-    padding-top: 27px;
+    padding-top: 30px;
     min-height: 638px;
     background-image: url("../img/content/background-img-tablet.jpg");
 
@@ -24,6 +24,7 @@
   }
 
   @include vp-767 {
+    padding-top: 20px;
     min-height: 500px;
     background-image: url("../img/content/background-img-mobile.jpg");
 
@@ -41,6 +42,10 @@
 
 .page-header__logo {
   min-width: fit-content;
+}
+
+.page-header__logo a {
+  display: flex;
 }
 
 .page-header__logo-img {
@@ -63,12 +68,12 @@
   margin-left: 95px;
 
   @include vp-1023 {
-    margin-top: 214px;
+    margin-top: 218px;
     margin-left: 0;
   }
 
   @include vp-767 {
-    margin-top: 128px;
+    margin-top: 133px;
   }
 }
 
@@ -84,6 +89,7 @@
   font-size: 54px;
   line-height: 66px;
   color: $color-alice-blue;
+  letter-spacing: -0.8px;
 
   @include vp-1023 {
     font-size: 50px;
@@ -110,5 +116,6 @@
   @include vp-767 {
     font-size: 16px;
     line-height: 22px;
+    padding-right: 60px
   }
 }

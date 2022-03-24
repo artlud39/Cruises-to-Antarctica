@@ -669,6 +669,12 @@ button,
   min-width: fit-content;
 }
 
+.page-header__logo a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .page-header__logo-img {
   width: 70px;
   height: 38px;
@@ -696,6 +702,7 @@ button,
   font-size: 54px;
   line-height: 66px;
   color: #f9fbfd;
+  letter-spacing: -0.8px;
 }
 
 .page-header__intro-text {
@@ -747,7 +754,7 @@ button,
   flex-direction: column;
   padding: 0;
   cursor: pointer;
-  width: 30px;
+  width: 24px;
   height: 16px;
   border: none;
   outline: none;
@@ -762,7 +769,7 @@ button,
 }
 
 .burger__line {
-  width: 30px;
+  width: 24px;
   height: 2px;
   -webkit-transition: 0.2s linear;
   -o-transition: 0.2s linear;
@@ -810,7 +817,7 @@ button,
 }
 
 .intro {
-  padding: 120px 0;
+  padding: 118px 0 120px;
 }
 
 .intro__wrapper {
@@ -824,6 +831,8 @@ button,
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  max-width: 1160px;
+  padding: 0;
 }
 
 .intro__inner-info {
@@ -872,7 +881,7 @@ button,
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 118px 0;
+  padding: 119px 0;
 }
 
 .advantage__wrapper {
@@ -965,7 +974,7 @@ button,
   margin: 0;
   font-weight: 500;
   font-size: 18px;
-  line-height: 27px;
+  line-height: 25px;
   color: #011c40;
 }
 
@@ -1393,7 +1402,7 @@ button,
 }
 
 .contacts {
-  padding: 120px 0;
+  padding: 117px 0;
 }
 
 .contacts__wrapper {
@@ -1429,7 +1438,8 @@ button,
   font-size: 18px;
   color: #011c40;
   margin: 0;
-  padding-bottom: 40px;
+  padding-bottom: 37px;
+  line-height: 27px;
 }
 
 .contacts__info-wrapper p,
@@ -1454,10 +1464,12 @@ button,
 }
 
 .contacts__info-wrapper p {
-  padding-bottom: 25px;
+  padding-bottom: 20px;
 }
 
 .contacts__info-wrapper p::before {
+  position: absolute;
+  top: 8px;
   width: 18px;
   height: 22px;
   background-image: url("../img/svg/pin-icon.svg");
@@ -1514,6 +1526,12 @@ button,
   min-width: -webkit-fit-content;
   min-width: -moz-fit-content;
   min-width: fit-content;
+}
+
+.page-footer__logo a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .page-footer__logo-img {
@@ -1748,19 +1766,13 @@ button,
   }
 }
 
-@media (max-width: 1439px) {
-  .container {
-    padding: 0 103px;
-  }
-}
-
 @media (max-width: 1023px) {
   .container {
     padding: 0 45px;
   }
 
   .page-header {
-    padding-top: 27px;
+    padding-top: 30px;
     min-height: 638px;
     background-image: url("../img/content/background-img-tablet.jpg");
   }
@@ -1771,7 +1783,7 @@ button,
   }
 
   .page-header__intro {
-    margin-top: 214px;
+    margin-top: 218px;
     margin-left: 0;
   }
 
@@ -1795,24 +1807,22 @@ button,
   }
 
   .intro {
-    padding: 100px 0;
+    padding: 93px 0 94px;
   }
 
   .intro__wrapper {
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
     gap: 30px;
   }
 
   .intro__inner-info {
-    gap: 10px;
+    gap: 12px;
     padding-right: 0;
   }
 
   .intro__inner-info h3 {
     font-size: 26px;
     line-height: 36px;
+    padding-right: 25px;
   }
 
   .intro__img-wrapper img {
@@ -1822,11 +1832,11 @@ button,
 
   .advantage {
     background-image: url("../img/content/background-advantages-img-tablet.jpg");
-    padding: 100px 0;
+    padding: 98px 0 100px;
   }
 
   .advantage__wrapper {
-    gap: 54px;
+    gap: 56px;
   }
 
   .advantage__wrapper h2 {
@@ -1839,7 +1849,7 @@ button,
 
   .advantage__item {
     max-width: 206px;
-    padding: 69px 15px 25px 20px;
+    padding: 72px 16px 20px 20px;
   }
 
   .advantage__item::before {
@@ -1865,7 +1875,11 @@ button,
   }
 
   .cruises {
-    padding: 100px 15px;
+    padding: 98px 15px 100px;
+  }
+
+  .cruises__wrapper {
+    gap: 57px;
   }
 
   .cruises__wrapper h2 {
@@ -1908,8 +1922,22 @@ button,
     background-image: url("../img/content/catalog/cruise-8-img-tablet.jpg");
   }
 
+  .cruises__item h3 {
+    padding-bottom: 27px;
+    padding-left: 35px;
+  }
+
+  .cruises__item-info-wrapper {
+    padding: 30px 35px 35px;
+  }
+
+  .cruises__item-info-inner h3 {
+    padding-left: 0;
+    padding-bottom: 13px;
+  }
+
   .booking {
-    padding: 100px;
+    padding: 88px 100px 100px;
     min-height: 805px;
     background-image: url("../img/content/background-form-img-tablet.jpg");
   }
@@ -1932,7 +1960,7 @@ button,
   }
 
   .booking__wrapper {
-    gap: 40px;
+    gap: 52px;
   }
 
   .booking__inner {
@@ -1942,6 +1970,11 @@ button,
   .booking__inner h2 {
     font-size: 34px;
     line-height: 51px;
+    padding-bottom: 5px;
+  }
+
+  .booking__inner p {
+    padding: 0 55px;
   }
 
   .booking__form-wrapper {
@@ -1950,16 +1983,8 @@ button,
     right: 163px;
   }
 
-  .form__label-agreement::before {
-    top: 5px;
-  }
-
-  .form__agreement-inner input:checked + label::after {
-    top: 6px;
-  }
-
   .contacts {
-    padding: 100px 0;
+    padding: 95px 0 97px;
   }
 
   .contacts__wrapper {
@@ -1969,6 +1994,14 @@ button,
   .contacts__map {
     width: 324px;
     height: 335px;
+  }
+
+  .contacts__inner p {
+    padding-bottom: 26px;
+  }
+
+  .contacts__info-wrapper p {
+    padding-bottom: 20px;
   }
 
   .page-footer {
@@ -2068,6 +2101,7 @@ button,
   }
 
   .page-header {
+    padding-top: 20px;
     min-height: 500px;
     background-image: url("../img/content/background-img-mobile.jpg");
   }
@@ -2078,7 +2112,7 @@ button,
   }
 
   .page-header__intro {
-    margin-top: 128px;
+    margin-top: 133px;
   }
 
   .page-header__intro-title {
@@ -2089,6 +2123,7 @@ button,
   .page-header__intro-text {
     font-size: 16px;
     line-height: 22px;
+    padding-right: 60px;
   }
 
   .main-nav {
@@ -2101,7 +2136,7 @@ button,
 
   .main-nav--opened {
     position: fixed;
-    left: 8px;
+    left: auto;
     top: 0;
     bottom: 0;
     right: 8px;
@@ -2113,8 +2148,8 @@ button,
   .main-nav--opened::before {
     content: "";
     position: absolute;
-    top: 28px;
-    left: 22px;
+    top: 20px;
+    left: 23px;
     width: 42px;
     height: 22px;
     background-image: url("../img/svg/logo-icon-black.svg");
@@ -2183,7 +2218,7 @@ button,
   }
 
   .intro {
-    padding: 65px 0;
+    padding: 58px 0 65px;
   }
 
   .intro__wrapper {
@@ -2194,10 +2229,11 @@ button,
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    gap: 40px;
+    gap: 33px;
   }
 
   .intro__inner-info {
+    gap: 14px;
     padding-right: 0;
   }
 
@@ -2213,15 +2249,15 @@ button,
 
   .advantage {
     background-image: url("../img/content/background-advantages-img-mobile.jpg");
-    padding: 65px 0;
+    padding: 63px 0 65px;
   }
 
   .advantage__wrapper {
-    gap: 30px;
+    gap: 35px;
   }
 
   .advantage__wrapper h2 {
-    font-size: 26px;
+    font-size: 24px;
   }
 
   .advantage__list {
@@ -2234,14 +2270,19 @@ button,
   .advantage__item {
     max-width: 290px;
     min-height: 250px;
+    padding: 72px 21px 20px 20px;
+  }
+
+  .advantage__item h3 {
+    padding-right: 55px;
   }
 
   .cruises {
-    padding: 65px 15px;
+    padding: 63px 15px 65px;
   }
 
   .cruises__wrapper {
-    gap: 30px;
+    gap: 35px;
   }
 
   .cruises__wrapper h2 {
@@ -2284,14 +2325,32 @@ button,
     background-image: url("../img/content/catalog/cruise-8-img-mobile.jpg");
   }
 
+  .cruises__item h3 {
+    padding-bottom: 15px;
+    padding-left: 25px;
+  }
+
+  .cruises__item-info-wrapper {
+    padding: 30px 25px 35px;
+  }
+
+  .cruises__item-info-inner h3 {
+    padding-left: 0;
+    padding-bottom: 13px;
+  }
+
   .booking {
-    padding: 65px 0;
+    padding: 58px 0 65px;
     min-height: 760px;
     background-image: url("../img/content/background-form-img-mobile.jpg");
   }
 
+  .booking__wrapper {
+    gap: 34px;
+  }
+
   .booking__inner {
-    gap: 5px;
+    gap: 9px;
     padding: 0 17px;
   }
 
@@ -2303,20 +2362,47 @@ button,
   .booking__inner p {
     font-size: 16px;
     line-height: 22px;
+    padding: 0;
   }
 
   .booking__form-wrapper {
     min-width: 290px;
-    max-width: 290px;
-    padding: 40px 30px;
+    max-width: 400px;
+    padding: 35px 30px 30px;
   }
 
   .booking__form-wrapper p {
     text-align: center;
+    line-height: 25px;
+  }
+
+  .form {
+    gap: 25px;
+  }
+
+  .form__agreement-inner {
+    padding-top: 0;
+  }
+
+  .form__label-agreement {
+    line-height: 12px;
+    padding-left: 28px;
+  }
+
+  .form__label-agreement::before {
+    top: 5px;
+    width: 20px;
+    height: 20px;
+  }
+
+  .form__agreement-inner input:checked + label::after {
+    top: 5px;
+    width: 20px;
+    height: 20px;
   }
 
   .contacts {
-    padding: 60px 0;
+    padding: 60px 0 55px;
   }
 
   .contacts__wrapper {
@@ -2336,6 +2422,14 @@ button,
   .contacts__map {
     width: 290px;
     height: 316px;
+  }
+
+  .contacts__info-wrapper p {
+    line-height: 24px;
+  }
+
+  .contacts__info-wrapper p::before {
+    top: 6px;
   }
 
   .page-footer {
@@ -2367,7 +2461,7 @@ button,
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    gap: 30px;
+    gap: 29px;
   }
 
   .page-footer__logo-img {
@@ -2380,7 +2474,7 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    gap: 0;
+    gap: 5px;
   }
 
   .site-list-footer__item-link {
