@@ -1,5 +1,5 @@
 .intro {
-  padding: 118px 0 120px;
+  padding: 118px 103px 120px;
 
   @include vp-1023 {
     padding: 93px 0 94px;
@@ -13,7 +13,6 @@
 .intro__wrapper {
   display: flex;
   align-items: center;
-  gap: calc(50% - 884px);
   justify-content: space-between;
   max-width: 1160px;
   padding: 0;
@@ -35,16 +34,19 @@
   flex-direction: column;
   gap: 20px;
   max-width: 525px;
+  min-width: 360px;
   padding-right: 10px;
 
   @include vp-1023 {
     gap: 12px;
     padding-right: 0;
+    min-width: 324px;
   }
 
   @include vp-767 {
     gap: 14px;
     padding-right: 0;
+    min-width: 290px;
   }
 }
 
@@ -73,7 +75,15 @@
 }
 
 .intro__img-wrapper {
-  min-width: fit-content;
+  min-width: 400px;
+
+  @include vp-1023 {
+    min-width: 324px;
+  }
+
+  @include vp-767 {
+    min-width: 290px;
+  }
 }
 
 .intro__img-wrapper img {

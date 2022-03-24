@@ -39,15 +39,18 @@
     display: flex;
   }
 
+  .main-nav--nojs .site-list__item {
+    justify-content: center;
+  }
+
   .main-nav--nojs {
-    position: fixed;
+    position: static;
     top: 0;
     bottom: auto;
-    right: 8px;
+    right: 0;
     background-color: $color-alice-blue;
     padding: 15px 23px 10px 22px;
-    width: calc(100% - (20% + 60px));
+    width: 100%;
     min-width: 285px;
-    max-width: 320px;
   }
 }

@@ -119,3 +119,26 @@
     padding-right: 60px
   }
 }
+
+@include vp-767 {
+  .page-header--nojs {
+    padding-top: 0;
+  }
+
+  .page-header--nojs .container {
+    padding: 0;
+  }
+
+  .page-header--nojs .page-header__logo {
+    display: none;
+  }
+
+  .page-header--nojs .page-header__burger {
+    display: none;
+  }
+
+  .page-header--nojs .page-header__intro {
+    margin-top: 50px;
+  }
+}
+

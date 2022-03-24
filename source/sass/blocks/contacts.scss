@@ -66,6 +66,11 @@
   }
 }
 
+.contacts__info-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 .contacts__info-wrapper p,
 .contacts__info-wrapper a {
   position: relative;

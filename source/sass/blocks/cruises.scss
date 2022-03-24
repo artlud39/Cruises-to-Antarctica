@@ -317,6 +317,7 @@
 .cruises__item-info-inner {
   display: flex;
   flex-direction: column;
+  overflow: scroll;
 }
 
 .cruises__item-info-inner h3 {
