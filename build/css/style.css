@@ -636,14 +636,13 @@ button,
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
-  padding: 0 103px;
+  padding: 0 83px 0 103px;
 }
 
 .page-header {
-  position: relative;
   min-height: 650px;
   z-index: 10;
-  padding-top: 33px;
+  padding-top: 36px;
   background-color: #c1d5f0;
   background-image: url("../img/content/background-img-desktop.jpg");
   background-size: cover;
@@ -681,7 +680,7 @@ button,
 }
 
 .page-header__intro {
-  margin-top: 191px;
+  margin-top: 196px;
   margin-left: 95px;
 }
 
@@ -721,7 +720,7 @@ button,
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  gap: 15px 33px;
+  gap: 15px 35px;
 }
 
 .site-list__item {
@@ -1171,7 +1170,7 @@ button,
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 50px 60px;
+  padding: 50px 146px 50px 163px;
   min-height: 555px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1185,7 +1184,7 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 139px;
+  gap: 136px;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -1204,6 +1203,7 @@ button,
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  max-width: 500px;
 }
 
 .booking__inner h2 {
@@ -2174,9 +2174,9 @@ button,
     left: auto;
     top: 0;
     bottom: 0;
-    right: 8px;
+    right: 0;
     background-color: #f9fbfd;
-    padding: 75px 23px 10px 22px;
+    padding: 75px 23px 10px 15px;
     min-width: 285px;
   }
 
@@ -2184,7 +2184,7 @@ button,
     content: "";
     position: absolute;
     top: 20px;
-    left: 23px;
+    left: 15px;
     width: 42px;
     height: 22px;
     background-image: url("../img/svg/logo-icon-black.svg");

@@ -4,7 +4,7 @@
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  gap: 15px 33px;
+  gap: 15px 35px;
 
   @include vp-1023 {
     gap: 15px 24px;
