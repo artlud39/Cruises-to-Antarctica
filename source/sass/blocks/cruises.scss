@@ -317,7 +317,7 @@
 .cruises__item-info-inner {
   display: flex;
   flex-direction: column;
-  overflow: scroll;
+  overflow-y: auto;
 }
 
 .cruises__item-info-inner h3 {
@@ -352,11 +352,12 @@
 }
 
 .cruises__item-info-wrapper a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  padding: 9px 15px 10px;
   min-height: 40px;
+  width: 100%;
   background: $color-alice-blue;
   font-weight: 600;
   font-size: 14px;
@@ -364,6 +365,7 @@
   color: $color-tangaroa;
   cursor: pointer;
   z-index: 10;
+  word-wrap: break-word;
 
   @media (hover: hover), screen and (min-width: 0\0) {
     &:hover,
