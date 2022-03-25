@@ -9,11 +9,13 @@ function openMainMenu() {
   navToggle.addEventListener('click', function () {
     if (navMain.classList.contains('main-nav--closed')) {
       body.classList.add('scroll-lock');
+      pageHeader.classList.add('page-header--active');
       navMain.classList.remove('main-nav--closed');
       navMain.classList.add('main-nav--opened');
       navToggle.classList.add('burger--opened');
     } else {
       body.classList.remove('scroll-lock');
+      pageHeader.classList.remove('page-header--active');
       navMain.classList.add('main-nav--closed');
       navMain.classList.remove('main-nav--opened');
       navToggle.classList.remove('burger--opened');
@@ -30,6 +32,7 @@ function openMainMenu() {
 function closeMainMenu() {
   navMain.classList.add('main-nav--closed');
   navMain.classList.remove('main-nav--opened');
+  pageHeader.classList.remove('page-header--active');
   navToggle.classList.remove('burger--opened');
   body.classList.remove('scroll-lock');
 }
