@@ -16,6 +16,8 @@
     background-color: $color-alice-blue;
     padding: 75px 23px 10px 15px;
     min-width: 285px;
+    width: 80%;
+    overflow-y: auto;
 
     &::before {
       content: "";
