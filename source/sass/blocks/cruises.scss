@@ -21,7 +21,7 @@
   }
 
   @include vp-767 {
-    gap: 35px;
+    gap: 0;
   }
 }
 
@@ -37,6 +37,7 @@
 
   @include vp-767 {
     font-size: 24px;
+    padding-bottom: 35px;
   }
 }
 
@@ -49,6 +50,10 @@
   justify-content: center;
   gap: 30px;
   max-width: 1130px;
+
+  @include vp-767 {
+    gap: 0;
+  }
 }
 
 .cruises__item {
@@ -70,6 +75,10 @@
 
   @include vp-767 {
     width: 270px;
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
 }
 

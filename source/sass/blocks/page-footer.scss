@@ -23,7 +23,6 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    gap: 30px;
   }
 }
 
@@ -41,12 +40,17 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    gap: 29px;
+    gap: 0;
+    margin-bottom: 30px;
   }
 }
 
 .page-footer__logo {
   min-width: fit-content;
+
+  @include vp-767 {
+    margin-bottom: 29px;
+  }
 }
 
 .page-footer__logo a {

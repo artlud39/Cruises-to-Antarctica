@@ -41,7 +41,7 @@
   }
 
   @include vp-767 {
-    gap: 35px;
+    gap: 0px;
   }
 }
 
@@ -57,6 +57,7 @@
 
   @include vp-767 {
     font-size: 24px;
+    padding-bottom: 35px;
   }
 }
 
@@ -74,6 +75,7 @@
   }
 
   @include vp-767 {
+    gap: 0;
     flex-direction: column;
   }
 }
@@ -111,6 +113,11 @@
     max-width: 290px;
     min-height: 250px;
     padding: 72px 21px 20px 20px;
+    gap: 0;
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
 }
 
@@ -162,6 +169,7 @@
 
   @include vp-767 {
     padding-right: 55px;
+    padding-bottom: 8px;
   }
 }
 

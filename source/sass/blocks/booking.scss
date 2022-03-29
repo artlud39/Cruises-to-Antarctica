@@ -118,7 +118,6 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  gap: 27px;
   min-width: 403px;
   max-width: 403px;
   min-height: 455px;
@@ -144,6 +143,7 @@
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
+  padding-bottom: 27px;
   color: $color-alice-blue;
 
   @include vp-767 {

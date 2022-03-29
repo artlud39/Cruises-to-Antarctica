@@ -1247,7 +1247,6 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  gap: 27px;
   min-width: 403px;
   max-width: 403px;
   min-height: 455px;
@@ -1262,6 +1261,7 @@ button,
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
+  padding-bottom: 27px;
   color: #f9fbfd;
 }
 
@@ -1284,7 +1284,6 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  gap: 20px;
   border: none;
   margin: 0;
   padding: 0;
@@ -1292,6 +1291,10 @@ button,
 
 .form__fieldset p {
   margin: 0;
+}
+
+.form__input-inner {
+  padding-bottom: 20px;
 }
 
 .form__input-inner input {
@@ -1571,6 +1574,10 @@ button,
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   gap: 15px 33px;
+}
+
+.site-list-footer__item:not(:last-child) {
+  padding-bottom: 5px;
 }
 
 .site-list-footer__item-link {
@@ -2283,18 +2290,20 @@ button,
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    gap: 33px;
+    gap: 0;
   }
 
   .intro__inner-info {
-    gap: 14px;
+    gap: 0;
     padding-right: 0;
     min-width: 290px;
+    padding-bottom: 33px;
   }
 
   .intro__inner-info h3 {
     font-size: 24px;
     line-height: 34px;
+    padding-bottom: 14px;
   }
 
   .intro__img-wrapper {
@@ -2312,14 +2321,16 @@ button,
   }
 
   .advantage__wrapper {
-    gap: 35px;
+    gap: 0px;
   }
 
   .advantage__wrapper h2 {
     font-size: 24px;
+    padding-bottom: 35px;
   }
 
   .advantage__list {
+    gap: 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -2330,10 +2341,16 @@ button,
     max-width: 290px;
     min-height: 250px;
     padding: 72px 21px 20px 20px;
+    gap: 0;
+  }
+
+  .advantage__item:not(:last-child) {
+    margin-bottom: 30px;
   }
 
   .advantage__item h3 {
     padding-right: 55px;
+    padding-bottom: 8px;
   }
 
   .cruises {
@@ -2341,15 +2358,24 @@ button,
   }
 
   .cruises__wrapper {
-    gap: 35px;
+    gap: 0;
   }
 
   .cruises__wrapper h2 {
     font-size: 24px;
+    padding-bottom: 35px;
+  }
+
+  .cruises__list {
+    gap: 0;
   }
 
   .cruises__item {
     width: 270px;
+  }
+
+  .cruises__item:not(:last-child) {
+    margin-bottom: 30px;
   }
 
   .cruises__item--first {
@@ -2465,7 +2491,7 @@ button,
   }
 
   .contacts__wrapper {
-    gap: 40px;
+    gap: 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -2481,6 +2507,10 @@ button,
   .contacts__map {
     width: 290px;
     height: 316px;
+  }
+
+  .contacts__inner {
+    padding-bottom: 40px;
   }
 
   .contacts__info-wrapper p {
@@ -2506,7 +2536,6 @@ button,
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    gap: 30px;
   }
 
   .page-footer__inner {
@@ -2520,7 +2549,12 @@ button,
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    gap: 29px;
+    gap: 0;
+    margin-bottom: 30px;
+  }
+
+  .page-footer__logo {
+    margin-bottom: 29px;
   }
 
   .page-footer__logo-img {
@@ -2533,7 +2567,7 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    gap: 5px;
+    gap: 0;
   }
 
   .site-list-footer__item-link {

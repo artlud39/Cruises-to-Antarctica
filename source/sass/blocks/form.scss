@@ -11,7 +11,6 @@
 .form__fieldset {
   display: flex;
   flex-direction: column;
-  gap: 20px;
   border: none;
   margin: 0;
   padding: 0;
@@ -19,6 +18,10 @@
 
 .form__fieldset p {
   margin: 0;
+}
+
+.form__input-inner  {
+  padding-bottom: 20px;
 }
 
 .form__input-inner input {

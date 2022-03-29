@@ -12,8 +12,12 @@
 
   @include vp-767 {
     flex-direction: column;
-    gap: 5px;
+    gap: 0;
   }
+}
+
+.site-list-footer__item:not(:last-child) {
+  padding-bottom: 5px;
 }
 
 .site-list-footer__item-link {
